@@ -7,11 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      gridTemplateColumns: {
+        'fluid': 'repeat(auto-fit, minmax(15rem,1fr));'
       },
+      backgroundColor: {
+        'australien': '#D49817;',
+        'purplish': '#6647ED;',
+        'gambol': '#FBEC9F;',
+        'telemagenta': '#F8BFFE;',
+        'grey-bg': '#C7C4BF;',
+        'grey-dk': '#BDBBB7'
+      }
     },
   },
   plugins: [],
