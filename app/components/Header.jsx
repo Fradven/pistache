@@ -17,18 +17,23 @@ const Header = () => {
   };
 
   return (
-    <header className="max-w-full m-auto bg-telemagenta">
-      <nav className="flex justify-between">
-        <Link href={"/"} className="w-40 m-2">
-          <Image
-            src="/images/logo/logo_pistache.png"
-            alt="logo"
-            width={1200}
-            height={1200}
-          ></Image>
-        </Link>
+    <header className="max-w-full m-auto">
+      <nav className="">
+        <section className="w-full py-10 bg-hero-pattern bg-cover bg-center">
+          <article className="w-1/2 sm:w-2/12 m-auto p-2 rounded-lg bg-gambol-3-500/50">
+            <Link href={"/"} className="">
+              <Image
+                src="/images/logo/logo_pistache.png"
+                alt="logo"
+                width={1200}
+                height={1200}
+                className="w-full"
+              ></Image>
+            </Link>
+          </article>
+        </section>
 
-        <div className="md:hidden">
+        <div className="md:hidden bg-purplish-2">
           <button
             className="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
             onClick={toggleMenu}
@@ -67,30 +72,38 @@ const Header = () => {
         </div>
 
         <menu
-          className={`md:flex md:gap-5 md:justify-around ${
+          className={`md:flex md:gap-5 md:justify-around p-1 bg-purplish-2 ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
-            <li className="m-1">
+          <li className="m-1">
             <Link
-              className={`${playDis.className} text-lg mx-3 p-1 transition duration-300 hover:bg-telemagenta hover:ease-in ${
-                usePathname() === '/' ? 'underline underline-offset-8' : ''
+              className={`${
+                playDis.className
+              } text-lg mx-3 p-1 transition duration-300 hover:bg-australien-3 hover:ease-in ${
+                usePathname() === "/" ? "underline underline-offset-8" : ""
               }`}
               href="/"
             >
               Home
             </Link>
+
             <Link
-              className={`${playDis.className} text-lg mx-3 p-1 transition duration-300 hover:bg-telemagenta hover:ease-in ${
-                usePathname() === '/' ? 'underline underline-offset-8' : ''
+              className={`${
+                playDis.className
+              } text-lg mx-3 p-1 transition duration-300 hover:bg-australien-3 hover:ease-in ${
+                usePathname() === "/" ? "underline underline-offset-8" : ""
               }`}
               href="/"
             >
               Menu
             </Link>
+
             <Link
-              className={`${playDis.className} text-lg mx-3 p-1 transition duration-300 hover:bg-telemagenta hover:ease-in ${
-                usePathname() === '/' ? 'underline underline-offset-8' : ''
+              className={`${
+                playDis.className
+              } text-lg mx-3 p-1 transition duration-300 hover:bg-australien-3 hover:ease-in ${
+                usePathname() === "/" ? "underline underline-offset-8" : ""
               }`}
               href="/"
             >
