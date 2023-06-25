@@ -17,10 +17,10 @@ const Header = () => {
   };
 
   return (
-    <header className="max-w-full m-auto">
-      <nav className="">
+    <header>
+      <nav>
         <h1 className="w-full py-10 bg-hero-pattern bg-cover bg-center">
-          <article className="w-1/2 sm:w-2/12 m-auto px-2 py-10 rounded-3xl bg-gambol-3-500/50 bg-neutral-300/50">
+          <article className="w-1/2 sm:w-2/12 m-auto px-2 py-10 rounded-full bg-gambol-3-500/50 bg-neutral-300/50">
             <Link href={"/"} className="">
               <Image
                 src="/images/logo/logo_pistache.png"

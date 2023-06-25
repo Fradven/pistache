@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        'fluid': 'repeat(auto-fit, minmax(15rem,1fr));'
+        'fluid': 'repeat(auto-fit, minmax(26rem,1fr));'
       },
       backgroundColor: {
         'australien-1': '#FFFEF2;',
@@ -74,6 +74,11 @@ module.exports = {
 
       backgroundImage: {
         'hero-pattern': "url('/images/banner/pistache-banner.png')"
+      },
+
+      backgroundOpacity: {
+        'low' : '0.2',
+        'mid': '00.5'
       }
     },
   },
