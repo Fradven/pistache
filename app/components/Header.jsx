@@ -34,10 +34,7 @@ const Header = () => {
         </h1>
 
         <div className="md:hidden bg-purplish-2">
-          <button
-            className="text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-            onClick={toggleMenu}
-          >
+          <button className="text-gray-800" onClick={toggleMenu}>
             <span className="sr-only">Toggle Menu</span>
             {isMenuOpen ? (
               <svg
@@ -72,7 +69,7 @@ const Header = () => {
         </div>
 
         <menu
-          className={`md:flex md:gap-5 md:justify-around p-1 bg-purplish-2 ${
+          className={`md:flex md:gap-5 md:justify-center p-1 bg-purplish-2 ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
@@ -87,7 +84,9 @@ const Header = () => {
             >
               Home
             </Link>
+          </li>
 
+          <li className="m-1">
             <Link
               className={`${
                 playDis.className
@@ -98,7 +97,9 @@ const Header = () => {
             >
               Menu
             </Link>
+          </li>
 
+          <li className="m-1">
             <Link
               className={`${
                 playDis.className
@@ -109,12 +110,16 @@ const Header = () => {
             >
               About us
             </Link>
+          </li>
 
+          <li className="m-1">
             <Link
               className={`${
                 playDis.className
               } text-lg mx-3 p-2 transition duration-300 hover:bg-australien-3 hover:ease-in ${
-                usePathname() === "/contact" ? "underline underline-offset-8" : ""
+                usePathname() === "/contact"
+                  ? "underline underline-offset-8"
+                  : ""
               }`}
               href="/contact"
             >
