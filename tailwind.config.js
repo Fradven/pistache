@@ -74,11 +74,6 @@ module.exports = {
 
       backgroundImage: {
         'hero-pattern': "url('/images/banner/pistache-banner.png')"
-      },
-
-      backgroundOpacity: {
-        'low' : '0.2',
-        'mid': '00.5'
       }
     },
   },
