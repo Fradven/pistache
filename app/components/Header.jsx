@@ -19,8 +19,8 @@ const Header = () => {
   return (
     <header className="max-w-full m-auto">
       <nav className="">
-        <section className="w-full py-10 bg-hero-pattern bg-cover bg-center">
-          <article className="w-1/2 sm:w-2/12 m-auto p-2 rounded-lg bg-gambol-3-500/50">
+        <h1 className="w-full py-10 bg-hero-pattern bg-cover bg-center">
+          <article className="w-1/2 sm:w-2/12 m-auto px-2 py-10 rounded-3xl bg-gambol-3-500/50 bg-neutral-300/50">
             <Link href={"/"} className="">
               <Image
                 src="/images/logo/logo_pistache.png"
@@ -31,7 +31,7 @@ const Header = () => {
               ></Image>
             </Link>
           </article>
-        </section>
+        </h1>
 
         <div className="md:hidden bg-purplish-2">
           <button
@@ -80,7 +80,7 @@ const Header = () => {
             <Link
               className={`${
                 playDis.className
-              } text-lg mx-3 p-1 transition duration-300 hover:bg-australien-3 hover:ease-in ${
+              } text-lg mx-3 p-2 transition duration-300 hover:bg-australien-3 hover:ease-in ${
                 usePathname() === "/" ? "underline underline-offset-8" : ""
               }`}
               href="/"
@@ -91,10 +91,10 @@ const Header = () => {
             <Link
               className={`${
                 playDis.className
-              } text-lg mx-3 p-1 transition duration-300 hover:bg-australien-3 hover:ease-in ${
-                usePathname() === "/" ? "underline underline-offset-8" : ""
+              } text-lg mx-3 p-2 transition duration-300 hover:bg-australien-3 hover:ease-in ${
+                usePathname() === "/menu" ? "underline underline-offset-8" : ""
               }`}
-              href="/"
+              href="/menu"
             >
               Menu
             </Link>
@@ -102,10 +102,21 @@ const Header = () => {
             <Link
               className={`${
                 playDis.className
-              } text-lg mx-3 p-1 transition duration-300 hover:bg-australien-3 hover:ease-in ${
-                usePathname() === "/" ? "underline underline-offset-8" : ""
+              } text-lg mx-3 p-2 transition duration-300 hover:bg-australien-3 hover:ease-in ${
+                usePathname() === "/about" ? "underline underline-offset-8" : ""
               }`}
-              href="/"
+              href="/about"
+            >
+              About us
+            </Link>
+
+            <Link
+              className={`${
+                playDis.className
+              } text-lg mx-3 p-2 transition duration-300 hover:bg-australien-3 hover:ease-in ${
+                usePathname() === "/contact" ? "underline underline-offset-8" : ""
+              }`}
+              href="/contact"
             >
               Contact
             </Link>
