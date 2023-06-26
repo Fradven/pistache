@@ -5,6 +5,7 @@ const raleway = Raleway({ weight: ["400"], subsets: ["latin"] });
 export default function Contact() {
   return (
     <main className={`${raleway.className}`}>
+      {/* General inforamtion about the store with links towards social media pages */}
       <section className="md:flex max-w-screen-lg m-auto px-5">
         <article className="p-4 md:py-10 md:w-1/2 my-auto">
           <h4 className="text-lg mb-4">Restaurant Information</h4>
@@ -49,6 +50,7 @@ export default function Contact() {
           </ul>
         </article>
 
+        {/* iframe with the google map location of the store */}
         <article className="py-10  md:w-1/2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5060.35847350768!2d5.5843471446239485!3d50.64236230453931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa0c1f6d3b07%3A0xdd9d59ea234b528a!2sLa%20Maison%20du%20Peket%20bar%20-%20Amon%20Nanesse%20Restaurant%20Li%C3%A8ge%20-%20Appart%20Hotel!5e0!3m2!1sen!2sbe!4v1687684222256!5m2!1sen!2sbe"
@@ -61,6 +63,7 @@ export default function Contact() {
         </article>
       </section>
 
+      {/* Contact form */}
       <section className="max-w-screen-md m-auto p-5">
         <h3 className="text-xl mb-4">Contact Us</h3>
         <form>
