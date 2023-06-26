@@ -2,6 +2,7 @@ import Image from "next/image";
 
 const MenuCard = ({ title, content, imageURl }) => {
 
+  // this function create an object needed to convert html tags from a string into actual html tags
   const createMarkup = () => {
     return { __html: content };
   };
@@ -14,6 +15,7 @@ const MenuCard = ({ title, content, imageURl }) => {
         <Image src={imageURl} alt={title} width={1200} height={1200} />
       </div>
 
+      {/* dangerouslySetInnerHTML translate the string with html tags into a proper html element */}
       <article className="p-5" dangerouslySetInnerHTML={createMarkup()} />
     </section>
   );
