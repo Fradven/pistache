@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 25, 2023 at 06:56 PM
+-- Generation Time: Jun 26, 2023 at 07:17 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -54,9 +54,9 @@ CREATE TABLE IF NOT EXISTS `menus` (
 --
 
 INSERT INTO `menus` (`id`, `title`, `content`, `image`) VALUES
-(1, 'Taste of Italy', '<p>\r\n  <strong>Starter:</strong> Bruschetta with Fresh Tomatoes and Basil\r\n</p>\r\n<p>\r\n  <strong>Main Course:</strong> Spaghetti Carbonara with Pancetta\r\n</p>\r\n<p>\r\n  <strong>Dessert:</strong> Tiramisu\r\n</p>', '/image/pictures/menu/taste_of_italy.jpg'),
-(2, 'Asian Fusion Delight', '<p>\r\n  <strong>Starter:</strong> Vietnamese Spring Rolls with Peanut Dipping Sauce\r\n</p>\r\n<p>\r\n  <strong>Main Course:</strong> Thai Green Curry with Jasmine Rice\r\n</p>\r\n<p>\r\n  <strong>Dessert:</strong> Mango Sticky Rice\r\n</p>', '/image/pictures/menu/asian_fusion.jpg'),
-(3, 'Classic American Feast', '<p>\r\n  <strong>Starter:</strong> Caesar Salad with Homemade Dressing\r\n</p>\r\n<p>\r\n  <strong>Main Course:</strong> Grilled Steak with Mashed Potatoes and Gravy\r\n</p>\r\n<p>\r\n  <strong>Dessert:</strong> New York Cheesecake\r\n</p>', '/image/pictures/menu/american_feast.jpg');
+(1, 'Taste of Italy', '<p>\r\n  <strong>Starter:</strong> Bruschetta with Fresh Tomatoes and Basil\r\n</p>\r\n<p>\r\n  <strong>Main Course:</strong> Spaghetti Carbonara with Pancetta\r\n</p>\r\n<p>\r\n  <strong>Dessert:</strong> Tiramisu\r\n</p>', '/images/pictures/menu/taste_of_italy.jpg'),
+(2, 'Asian Fusion Delight', '<p>\r\n  <strong>Starter:</strong> Vietnamese Spring Rolls with Peanut Dipping Sauce\r\n</p>\r\n<p>\r\n  <strong>Main Course:</strong> Thai Green Curry with Jasmine Rice\r\n</p>\r\n<p>\r\n  <strong>Dessert:</strong> Mango Sticky Rice\r\n</p>', '/images/pictures/menu/asian_fusion.jpg'),
+(3, 'Classic American Feast', '<p>\r\n  <strong>Starter:</strong> Caesar Salad with Homemade Dressing\r\n</p>\r\n<p>\r\n  <strong>Main Course:</strong> Grilled Steak with Mashed Potatoes and Gravy\r\n</p>\r\n<p>\r\n  <strong>Dessert:</strong> New York Cheesecake\r\n</p>', '/images/pictures/menu/american_feast.jpg');
 
 -- --------------------------------------------------------
 
