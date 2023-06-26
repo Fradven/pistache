@@ -55,7 +55,7 @@ export default function Contact() {
             width="600"
             height="450"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             className="w-full"
           ></iframe>
         </article>
